@@ -59,4 +59,5 @@ def modelo_normal(sharpe, vol, n, num_simu = 100000):
 
 df = modelo_normal(Sharpe, Vol, n)
 df.set_index('Níveis de σ', inplace=True)
+df.rename_axis('Níveis de σ')
 st.write(df)
