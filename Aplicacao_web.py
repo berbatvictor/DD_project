@@ -13,6 +13,9 @@ import streamlit as st
 st.write(""" Modelo previsor de Drawdown """)
          
         
+def p_to_f(x):
+         return float(x.strip('%'))/100
+
 st.sidebar.header("Escolha seus parâmetros")
 
 sharpe = 0.5
@@ -20,7 +23,7 @@ vol = 0.1
 anos = 10
 
 Sharpe = float(st.sidebar.text_input("Sharpe", sharpe))
-Vol = stringPercentToFloat(st.sidebar.text_input("Volatilidade (%)", vol))
+Vol = p_to_f(st.sidebar.text_input("Volatilidade (%)", vol))
 n = int(st.sidebar.text_input("Janela de tempo (em anos)", anos))
 
 def modelo_normal(sharpe, vol, n, num_simu = 100000):
