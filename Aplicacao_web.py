@@ -10,8 +10,6 @@ import numpy as np
 import datetime as dt
 import streamlit as st
 
-runOnSave = False
-
 st.write(""" Modelo previsor de Drawdown """)
          
         
