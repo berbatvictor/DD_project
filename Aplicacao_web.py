@@ -20,8 +20,8 @@ vol = 0.1
 anos = 10
 
 Sharpe = float(st.sidebar.text_input("Sharpe", sharpe))
-Vol = float(st.sidebar.text_input("Volatilidade", vol))
-n = int(st.sidebar.text_input("Janela de tempo", anos))
+Vol = stringPercentToFloat(st.sidebar.text_input("Volatilidade (%)", vol))
+n = int(st.sidebar.text_input("Janela de tempo (em anos)", anos))
 
 def modelo_normal(sharpe, vol, n, num_simu = 100000):
     drawdowns = np.array([])
