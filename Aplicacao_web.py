@@ -14,12 +14,16 @@ st.write(""" Modelo previsor de Drawdown """)
          
         
 def p_to_f(x):
-         return float(x.strip('%'))/100
+         if % in A:
+                  return float(x.strip('%'))/100
+         else:
+                  return float(x)/100
+                  
 
 st.sidebar.header("Escolha seus parâmetros")
 
 sharpe = 0.5
-vol = 0.1
+vol = 10%
 anos = 10
 
 Sharpe = float(st.sidebar.text_input("Sharpe", sharpe))
