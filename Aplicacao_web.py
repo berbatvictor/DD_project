@@ -23,7 +23,7 @@ def p_to_f(x):
 st.sidebar.header("Escolha seus parâmetros")
 
 sharpe = 0.5
-vol = 10%
+vol = "10%"
 anos = 10
 
 Sharpe = float(st.sidebar.text_input("Sharpe", sharpe))
