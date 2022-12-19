@@ -5,9 +5,7 @@ Created on Sun Dec 18 19:31:52 2022
 @author: victor.berbat
 """
 
-pip install matplotlib.pyplot
 
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import datetime as dt
