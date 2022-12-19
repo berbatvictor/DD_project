@@ -10,8 +10,7 @@ import numpy as np
 import datetime as dt
 import streamlit as st
 
-st.write(""" 
-         Modelo previsor de Drawdown """)
+st.write(""" Modelo previsor de Drawdown """)
          
         
 st.sidebar.header("Escolha seus parâmetros")
@@ -59,6 +58,4 @@ def modelo_normal(sharpe, vol, n, num_simu = 100000):
     return df_probs
 
 df = modelo_normal(Sharpe, Vol, n)
-#style = df.style.hide_index()
-df.set_index('Níveis de σ', inplace=True)
 st.write(df)
