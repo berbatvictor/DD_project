@@ -11,7 +11,7 @@ import datetime as dt
 import streamlit as st
 
 st.write(""" 
-         ** Modelo previso de drawdown ** """)
+         Modelo previsor de Drawdown """)
          
         
 st.sidebar.header("Escolha seus parâmetros")
