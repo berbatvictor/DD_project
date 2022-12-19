@@ -14,7 +14,7 @@ st.write(""" Modelo previsor de Drawdown """)
          
         
 def p_to_f(x):
-         if % in A:
+         if '%' in A:
                   return float(x.strip('%'))/100
          else:
                   return float(x)/100
