@@ -10,6 +10,9 @@ import numpy as np
 import datetime as dt
 import streamlit as st
 
+[server]
+runOnSave = true
+
 st.write(""" Modelo previsor de Drawdown """)
          
         
