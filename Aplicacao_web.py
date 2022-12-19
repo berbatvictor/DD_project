@@ -59,4 +59,5 @@ def modelo_normal(sharpe, vol, n, num_simu = 100000):
     return df_probs
 
 df = modelo_normal(Sharpe, Vol, n)
-st.write(df)
+style = df.style.hide_index()
+st.write(styler.to_html(), unsafe_allow_html=True)
