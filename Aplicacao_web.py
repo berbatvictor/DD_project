@@ -5,6 +5,7 @@ Created on Sun Dec 18 19:31:52 2022
 @author: victor.berbat
 """
 
+pip install -r requirements.txt
 
 import pandas as pd
 import numpy as np
