@@ -1,5 +1,5 @@
-pip3 install --upgrade pip
-pip install -r requirements.txt
+#pip3 install --upgrade pip
+!pip install -r requirements.txt
 
 import pandas as pd
 import numpy as np
