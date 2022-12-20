@@ -1,4 +1,4 @@
-pip install --upgrade pip
+pip3 install --upgrade pip
 pip install -r requirements.txt
 
 import pandas as pd
